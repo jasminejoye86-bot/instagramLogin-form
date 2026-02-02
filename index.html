@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>instagram login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bowlby+One&family=Oswald:wght@200..700&family=Playwrite+CU+Guides&family=Playwrite+IN+Guides&family=Special+Gothic+Condensed+One&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    h1 {
+        font-family: "Alan Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        top: 10px;
+    }
+
+    body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(214, 205, 205)
+    }
+
+    .insta-container {
+        position: relative;
+        height: 55%;
+        width: 30%;
+        justify-content: center;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    input {
+        height: 40px;
+        margin: 4px;
+        width: 93%;
+        border-radius: 3px;
+        border: 1.5px solid rgb(179, 179, 179);
+        outline: none;
+        padding: 10px;
+        font-size: 100%;
+        position: relative;
+        top: 10px;
+    }
+
+    .insta-form label {
+        position: absolute;
+        top: 17px;
+        left: 21px;
+        color: rgb(100, 96, 96);
+        transition: 0.2s;
+        background-color: white;
+
+    }
+
+    .insta-form {
+        position: relative;
+        top: 10%;
+        margin: 2px 20px;
+    }
+
+    .form-btn button {
+        position: absolute;
+        top: 48%;
+        left: 7.5%;
+        height: 8%;
+        width: 85%;
+        color: white;
+        background-color: rgb(60, 60, 214);
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .form-btn button:hover {
+        background-color: rgb(67, 67, 174);
+    }
+
+    .link-forgot a:hover {
+        color: rgb(0, 0, 203);
+        text-decoration: underline;
+    }
+
+    img {
+        height: 23px;
+        width: 40px;
+        position: relative;
+        left: 10%;
+        top: 5px;
+    }
+
+    .fac-logo {
+        position: absolute;
+        bottom: 25%;
+        left: 20%;
+    }
+
+    .link-forgot {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .fac-logo a:hover {
+        color: rgb(0, 0, 203);
+        text-decoration: underline;
+    }
+
+
+    span {
+        position: absolute;
+        top: 60%;
+        color: rgb(100, 96, 96);
+
+    }
+
+
+
+    a {
+        text-decoration: none;
+
+    }
+
+    .fac-logo a {
+        position: relative;
+        bottom: 20%;
+        left: 10px;
+        color: rgb(27, 27, 183);
+
+    }
+
+    .insta-form input:focus+label,
+    .insta-form input:valid+label {
+        top: -1px;
+        color: rgb(100, 96, 96);
+        left: 20px;
+    }
+
+    hr {
+        width: 85%;
+        position: absolute;
+        bottom: 20%;
+        left: 7%
+    }
+
+    .link-forgot a {
+        position: relative;
+        bottom: 2px;
+        left: 103%;
+        color: grey;
+    }
+</style>
+
+<body>
+    <div class="insta-container">
+        <header>
+            <h1>Instagram</h1>
+        </header>
+        <div class="insta-form">
+            <input type="text" id="content" name="content" required>
+            <label>Phone number,username,or email</label>
+        </div>
+        <div class="insta-form">
+            <input type="text" id="password" name="password" required>
+            <label>Password</label>
+        </div>
+
+
+        <div class=" form-btn">
+            <button type="submit" value="Log in">Log in</button>
+        </div>
+
+        <span>OR</span>
+        <div class="fac-logo">
+            <img src="facbok2.png" alt="facbok logo"></img>
+            <a href="#">Log in with facebook</a>
+        </div>
+        <hr>
+        <div class="link-forgot">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</body>
+
+</html>
